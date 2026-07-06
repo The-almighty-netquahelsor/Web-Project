@@ -1,0 +1,38 @@
+#header{
+    background-color: aqua;
+    color: black;
+    border-radius:10px 8px 5px;
+    justify-content: center;
+    padding: 10% 12px 8px;
+    margin: 16px;
+    box-shadow: 12px 15px 8px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 12px 15px 10px;
+    border-right: 10px;
+    animation-direction: reverse;
+
+}
+#header:hover{
+    background-color: firebrick;
+}
+body{
+    background-color: rgb(170, 151, 40);
+}
+
+button{
+    color: white;
+    background-color: black;
+    border-radius: 8px 16px;
+    padding: 8px;
+    margin: 0;
+}
+
+button:hover{
+    background-color: rgb(19, 19, 80);
+}
+textarea{
+    border-color: chocolate;
+    border: 8px 16px;
+    inline-size: auto;
+}
