@@ -3,42 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ascii Art Web</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    <h1 id="header">Ascii Art Generator</h1>
-    <form action="/ascii-art" method="post">
-        <br>
-        <p>This page helps to conversionally converts string text into abstract art measures...</p>
-        <textarea input type="text" name="text" placeholder="Type your text"></textarea>
+    <div class="container">
+        <h1>ASCII Art Generator</h1>
 
+        <form action="/ascii-art" method="POST">
+            <input type="text" name="text" placeholder="Type something...">
 
-        <br>
-        <input id="b23" type="radio" name="banner" value="standard" checked> Standard
-        
-        <input type="radio" name="banner" value="shadow"> Shadow
-        
-        <input type="radio" name="banner" value="thinkertoy"> Thinkertoy
-        <br>
-        <br>
-        <button type="submit">Generate</button>
-    </form>
+            <div class="banner-options">
+                <label>
+                    <input type="radio" name="banner" value="standard" checked> Standard
+                </label>
+                <label>
+                    <input type="radio" name="banner" value="shadow"> Shadow
+                </label>
+                <label>
+                    <input type="radio" name="banner" value="thinkertoy"> Thinkertoy
+                </label>
+            </div>
 
-    <pre>
-        
-    </pre>
+            <button type="submit">Generate</button>
+        </form>
 
-<footer>
-<pre>
-    Author : Kingsley Amorie
-            All copyrights() are reserve 2026
-            UNRELEASED V1.0.1
-
-    HINT: This is still under supervision and technical
-          adjustment...
-</pre>
-</footer>
-
+        <pre id="result">{{ .Result }}</pre>
+    </div>
 </body>
 </html>
